@@ -33,7 +33,10 @@ The website was designed to provide essential information about the NGO, allow u
 ```bash
 ngo-website/
 │
+├── images
 ├── index.html
+├── script.js
+├── style.css
 └── README.md
 
 ```

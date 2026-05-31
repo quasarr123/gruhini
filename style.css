@@ -408,7 +408,7 @@
     .footer-links h4 { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--warm); margin-bottom: 14px; }
     .footer-links a { display: block; font-size: 14px; color: var(--sand); text-decoration: none; margin-bottom: 8px; transition: color 0.2s; }
     .footer-links a:hover { color: var(--warm); }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; font-size: 13px; color: var(--white); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
     /* ── KEYFRAMES ── */
     @keyframes slideDown { from { opacity:0; transform:translateY(-20px); } to { opacity:1; transform:translateY(0); } }

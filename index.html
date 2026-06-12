@@ -21,57 +21,56 @@
       <span class="brand-tagline">NPO · Empowering Women</span>
       <span class="brand-name">Bharatiya Stree Jeevan Vikas Parishad</span>
     </div>
-
+ 
     <nav id="main-nav">
-
+      <!-- dim backdrop -->
+      <div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
+ 
       <!-- hamburger button -->
-      <button class="menu-btn" id="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
-        <div class="menu-btn-inner">
-          <div style="display:flex;flex-direction:column;gap:5px;align-items:center;">
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-            <span class="menu-bar"></span>
-          </div>
-          <span class="menu-active-label" id="active-label">Home</span>
-        </div>
+      <button class="menu-btn" id="menu-toggle" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
       </button>
-
-      <!-- dropdown panel -->
+ 
+      <!-- sidebar panel -->
       <div class="nav-dropdown" id="nav-dropdown" role="menu">
-
+ 
+        <!-- close × -->
+        <div class="nav-close-btn">
+          <button class="nav-close-x" onclick="closeMenu()" aria-label="Close menu">✕</button>
+        </div>
+ 
+        <!-- mini brand -->
+        <div class="nav-brand-mini">
+          <small>NPO · Empowering Women</small>
+          <strong>Bharatiya Stree Jeevan Vikas Parishad</strong>
+        </div>
+ 
         <button class="tab-btn active" onclick="showPage('home', this)" role="menuitem">
-          <span class="tab-icon">🏠</span>
-          Home
+          <span class="tab-icon">🏠</span> Home
         </button>
-
         <button class="tab-btn" onclick="showPage('gv', this)" role="menuitem">
-          <span class="tab-icon">📚</span>
-          Gruhini Vidyalaya
+          <span class="tab-icon">📚</span> Gruhini Vidyalaya
         </button>
-
         <button class="tab-btn" onclick="showPage('kamalini', this)" role="menuitem">
-          <span class="tab-icon">🦻</span>
-          Kamalini Karnabadhir School
+          <span class="tab-icon">🦻</span> Kamalini Karnabadhir School
         </button>
-
         <button class="tab-btn" onclick="showPage('gaurav', this)" role="menuitem">
-          <span class="tab-icon">🏅</span>
-          Gaurav Samarambh
+          <span class="tab-icon">🏅</span> Gaurav
         </button>
-
+ 
         <div class="nav-divider"></div>
-
+ 
         <button class="tab-btn" onclick="showPage('donate', this)" role="menuitem">
-          <span class="tab-icon">♥</span>
-          Donations
+          <span class="tab-icon">♥</span> Donations
         </button>
-
         <button class="tab-btn" onclick="showPage('contact', this)" role="menuitem">
-          <span class="tab-icon">📞</span>
-          Contact Us
+          <span class="tab-icon">📞</span> Contact Us
         </button>
-
-      </div><!-- /nav-dropdown -->
+ 
+        <div class="nav-footer">© Bharatiya Stree Jeevan Vikas Parishad · All rights reserved</div>
+      </div>
     </nav>
   </div>
 </header>
@@ -209,13 +208,15 @@
                               •	Students are encouraged to participate in:<br>
                               •	Dance and Drama, Drawing and Painting<br>
                               •	Technology-Enabled Learning<br>
-                              •	E-Learning Facilities</p>
+                              •	E-Learning Facilities</p> <br/>
+
+                              <button class="btn-outline-kamalini"  onclick="showPage('kamalini', document.querySelectorAll('.tab-btn')[4])"><u><i>More</i></u></button>
         </div>
       </div>
       <div class="card">
         <div class="card-img"><img src="images/womens-hostel.jpeg" alt="Women's Hostel"></div>
         <div class="card-body">
-          <div class="card-label">Livelihood</div>
+          <div class="card-label"><br>Livelihood</div>
           <div class="card-title">Women's Hostel</div>
           <p class="card-text">Safe, Comfortable & Affordable Accommodation. Established in 1988, the Women's Hostel provides secure and convenient accommodation for women and girls who come to Thane for education or employment. Just 5 minutes walking distance from Thane Railway Station.<br>
             •	Safe and hygienic residential environment.<br>
@@ -228,7 +229,7 @@
       <div class="card">
         <div class="card-img"><img src="images/ram-mandir.jpeg" alt="Ram Mandir"></div>
         <div class="card-body">
-          <div class="card-label">Mandir trust</div>
+          <div class="card-label"><br>Mandir trust</div>
           <div class="card-title">Shri Ram Mandir</div>
           <p class="card-text">The only Shri Ram Mandir in Thane East
               A Spiritual Centre for the Community. Shri Ram Mandir is a revered spiritual landmark serving devotees and the local community. Where programs are held like Bhajan and Kirtan,
@@ -927,7 +928,7 @@
   <div class="footer-top">
     <div class="footer-brand brand">
       <span class="brand-tagline">NPO · Empowering Women</span>
-      <span class="brand-name" style="color:var(--white);">Stree <span>Vividha</span></span>
+      <span class="brand-name" style="color:var(--white);">Bharatiya Stree Jeevan Vikas Parishad</span>
     </div>
     <div class="footer-links">
       <h4>Navigate</h4>

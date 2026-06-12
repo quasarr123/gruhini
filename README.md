@@ -34,6 +34,7 @@ The website was designed to provide essential information about the NPO, allow u
 npo-website/
 │
 ├── images
+├── videos
 ├── index.html
 ├── script.js
 ├── style.css

@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Bharatiya Stree Jeevan Vikas Parishad is NPO pioneering in Women's Development and Empowerment. It has many sub-organisations like Gruhini Vidyalay/ Grihini Vidyalaya, Kamalini Karnabadhir School etc."> 
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  
   <title>Bharatiya Stree Jeevan Vikas Parishad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <link rel="icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,15 +19,59 @@
   <div class="header-inner">
     <div class="brand">
       <span class="brand-tagline">NPO · Empowering Women</span>
-      <span class="brand-name"><span>Bharatiya Stree Jeevan Vikas Parishad</span></span>
+      <span class="brand-name">Bharatiya Stree Jeevan Vikas Parishad</span>
     </div>
-    <nav>
-      <button class="tab-btn active"     onclick="showPage('home',    this)">Home</button>
-      <button class="tab-btn"            onclick="showPage('gv',      this)">Gruhini Vidyalaya</button>
-      <button class="tab-btn"            onclick="showPage('contact', this)">Contact Us</button>
-      <button class="tab-btn"            onclick="showPage('donate',  this)">Donations</button>
-      <button class="tab-btn"            onclick="showPage('kamalini', this)">Kamalini Karnabadhir School</button>
-      <button class="tab-btn"            onclick="showPage('gaurav', this)">Gaurav Samarambh</button>
+
+    <nav id="main-nav">
+
+      <!-- hamburger button -->
+      <button class="menu-btn" id="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+        <div class="menu-btn-inner">
+          <div style="display:flex;flex-direction:column;gap:5px;align-items:center;">
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+            <span class="menu-bar"></span>
+          </div>
+          <span class="menu-active-label" id="active-label">Home</span>
+        </div>
+      </button>
+
+      <!-- dropdown panel -->
+      <div class="nav-dropdown" id="nav-dropdown" role="menu">
+
+        <button class="tab-btn active" onclick="showPage('home', this)" role="menuitem">
+          <span class="tab-icon">🏠</span>
+          Home
+        </button>
+
+        <button class="tab-btn" onclick="showPage('gv', this)" role="menuitem">
+          <span class="tab-icon">📚</span>
+          Gruhini Vidyalaya
+        </button>
+
+        <button class="tab-btn" onclick="showPage('kamalini', this)" role="menuitem">
+          <span class="tab-icon">🦻</span>
+          Kamalini Karnabadhir School
+        </button>
+
+        <button class="tab-btn" onclick="showPage('gaurav', this)" role="menuitem">
+          <span class="tab-icon">🏅</span>
+          Gaurav Samarambh
+        </button>
+
+        <div class="nav-divider"></div>
+
+        <button class="tab-btn" onclick="showPage('donate', this)" role="menuitem">
+          <span class="tab-icon">♥</span>
+          Donations
+        </button>
+
+        <button class="tab-btn" onclick="showPage('contact', this)" role="menuitem">
+          <span class="tab-icon">📞</span>
+          Contact Us
+        </button>
+
+      </div><!-- /nav-dropdown -->
     </nav>
   </div>
 </header>
@@ -96,7 +144,6 @@
     <div class="about-img">
       <div class="about-img-label">
         <img src="images/stree-main-photo.jpeg" alt="Main Photo" style="max-width: 100%; height: auto;"><br/>
-        
       </div>
     </div>
     <div class="about-text">
@@ -120,11 +167,11 @@
       <div class="stat-label">Women Reached</div>
     </div>
     <div class="stat-item reveal">
-      <div class="stat-number">?</div>
+      <div class="stat-number">12</div>
       <div class="stat-label">Villages</div>
     </div>
     <div class="stat-item reveal">
-      <div class="stat-number">?</div>
+      <div class="stat-number">8</div>
       <div class="stat-label">Years of Impact</div>
     </div>
     <div class="stat-item reveal">
@@ -168,7 +215,7 @@
       <div class="card">
         <div class="card-img"><img src="images/womens-hostel.jpeg" alt="Women's Hostel"></div>
         <div class="card-body">
-          <div class="card-label"><br>Livelihood</div>
+          <div class="card-label">Livelihood</div>
           <div class="card-title">Women's Hostel</div>
           <p class="card-text">Safe, Comfortable & Affordable Accommodation. Established in 1988, the Women's Hostel provides secure and convenient accommodation for women and girls who come to Thane for education or employment. Just 5 minutes walking distance from Thane Railway Station.<br>
             •	Safe and hygienic residential environment.<br>
@@ -181,11 +228,11 @@
       <div class="card">
         <div class="card-img"><img src="images/ram-mandir.jpeg" alt="Ram Mandir"></div>
         <div class="card-body">
-          <div class="card-label"><br>Mandir trust</div>
+          <div class="card-label">Mandir trust</div>
           <div class="card-title">Shri Ram Mandir</div>
-          <p class="card-text"> the only shri Ram Mandir in Thane East
-              A Spiritual Centre for the Community. Shri Ram Mandir is a revered spiritual landmark serving devotees and the local community. Where programs held like Bhajan and Kirtan programs.
-              Activities. Daily worship and religious activities.Annual Ram Janmotsav celebrations.</p>
+          <p class="card-text">The only Shri Ram Mandir in Thane East
+              A Spiritual Centre for the Community. Shri Ram Mandir is a revered spiritual landmark serving devotees and the local community. Where programs are held like Bhajan and Kirtan,
+              Daily worship and religious activities, and Annual Ram Janmotsav celebrations.</p>
         </div>
       </div>
     </div>
@@ -199,11 +246,10 @@
       <p class="section-sub">Moments from the field — classrooms, ceremonies, and community.</p>
     </div>
     <div class="gallery-grid reveal">
-      <div class="gallery-item" ><br/><small style="color:var(--muted)"><img src="images/stree-gallery-photo-1.jpeg" alt="Photo 1" style="max-width: 100%; height: auto;"></small></div>
-      <div class="gallery-item" ><br/><small><img src="images/stree-gallery-photo-2.jpeg" alt="Photo 2" style="max-width: 100%; height: auto;"></small></div>
-      <div class="gallery-item" ><br/><small style="color:var(--sand)"><img src="images/stree-gallery-photo-3.jpeg" alt="Photo 3" style="max-width: 100%; height: auto;"></small></div>
-      <div class="gallery-item" ><br/><small style="color:var(--sand)"><img src="images/stree-gallery-photo-4.jpeg" alt="Photo 4" style="max-width: 100%; height: auto;"></small></div>
-      
+      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sage-lt),var(--sand));"><br/><small style="color:var(--muted)"><img src="images/stree-gallery-photo-1.jpeg" alt="Photo 1" style="max-width: 100%; height: auto;"></small></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sand),var(--warm));"><br/><small><img src="images/stree-gallery-photo-2.jpeg" alt="Photo 2" style="max-width: 100%; height: auto;"></small></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,var(--earth),var(--bark));"><br/><small style="color:var(--sand)"><img src="images/stree-gallery-photo-3.jpeg" alt="Photo 3" style="max-width: 100%; height: auto;"></small></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sage),var(--earth));"><br/><small style="color:var(--sand)"><img src="images/stree-gallery-photo-4.jpeg" alt="Photo 4" style="max-width: 100%; height: auto;"></small></div>
     </div>
   </div>
 
@@ -243,9 +289,9 @@
         For these girls, accommodation, food, travel, and education facilities are provided free of cost by the institution.
         <br><br>
         Experienced doctors and nurses voluntarily participate in the girls’ training. Opportunities for practical training and experience are provided through hospitals. After completing the course, most of the girls work in their own villages while earning a livelihood.
-        <br><br>
+        <br><br></p>
 
-        <h2><strong>Humble request</strong></h2> <br>
+      <p><h2><strong>Humble request</strong></h2> <br>
         Greetings,
         <br><br>
         Since 1957, Gruhini Vidyalaya has been conducting activities that support the overall development of women and their families.
@@ -254,24 +300,22 @@
         <br><br>
         At present, Yoga classes, Dance classes, and value-education camps for schoolgirls are also conducted
         <br><br>
-        Also Gruhini Vidyalay enhances health awareness among these schoolgirls. <br/> <br/>
+        Also Gruhini Vidyalay enhances health awareness among these schoolgirls. <br/> <br/></p>
 
-        <strong>Appeal <br/>
+      <p><strong>Appeal <br/>
           We are certified non profit organisation sustained entirely by Donations by every day citizens. <br/>
           Want to help us, <br>
           
           Please help us by Donations. Kindly visit the Donations tab.
-        </strong>
-      </p>
-      
+        </strong></p>
     </div>
-    <div class="about-img" >
-      <div class="about-img-label"><img src="images/gruhini-ai-photo-2.jpeg" alt="Gruhini Vidyalay pamplet" style="max-width: 100%; height: auto;"><br/></div>
+    <div class="about-img" style="background:linear-gradient(135deg,var(--sage) 0%, var(--bark) 100%);">
+      <div class="about-img-label"><img src="images/gruhini-ai-photo-2.jpeg" alt="Gruhini Vidyalay pamplet" style="max-width: 100%; height: auto;"><br/><small style="margin-top:6px; display:block; opacity:0.7;">Classroom / Students Photo</small></div>
     </div>
   </div>
 
-  <!-- Stats -->
-  <!-- <div class="stats-strip">
+  <!-- Stats
+  <div class="stats-strip">
     <div class="stat-item reveal">
       <div class="stat-number">[ X ]</div>
       <div class="stat-label">Students Enrolled</div>
@@ -288,10 +332,10 @@
       <div class="stat-number">[ X ]</div>
       <div class="stat-label">[ Your Metric ]</div>
     </div>
-  </div> -->
+  </div>
 
-  <!-- What we teach -->
-  <!-- <div class="section">
+  What we teach
+  <div class="section">
     <div class="reveal">
       <div class="divider"></div>
       <h2 class="section-title">What We Teach</h2>
@@ -325,6 +369,71 @@
     </div>
   </div> -->
 
+  <!-- ── TESTIMONY SECTION ── -->
+  <div class="gv-testimony">
+
+    <div class="reveal">
+      <div class="divider"></div>
+      <h2 class="section-title">What Our Students Say</h2>
+      <p class="section-sub">[ One line — voices from the women who have been through this program. ]</p>
+    </div>
+
+    <div class="gv-testimony-grid">
+
+      <!-- ── PORTRAIT VIDEO (vertical, phone-style 9:16) ── -->
+      <div class="gv-testimony-card reveal">
+        <div class="gv-vid-wrap portrait-vid">
+          <video controls>
+              <source src="videos/gruhini-testimony-1.mp4" type="video/mp4">
+            </video>
+          
+        </div>
+        <div class="gv-testimony-body">
+          <div class="gv-testimony-name">[ Name ]</div>
+          <div class="gv-testimony-role">[ Batch / Village ]</div>
+          <!-- <div class="gv-testimony-quote">"[ Short quote from this person — one or two sentences. ]"</div> -->
+        </div>
+      </div>
+
+      <!-- ── LANDSCAPE VIDEO (horizontal, camera-style 16:9) ── -->
+      <div class="gv-testimony-card reveal">
+        <div class="gv-vid-wrap landscape-vid">
+          <!--
+            ✏️ DROP YOUR LANDSCAPE VIDEO HERE:
+            <video controls>
+              <source src="testimony2.mp4" type="video/mp4">
+            </video>
+          -->
+          <div class="gv-vid-overlay">
+            <div class="gv-play-btn">▶</div>
+            <span class="gv-vid-label">Landscape Video</span>
+            <small class="gv-vid-hint">16 : 9 · Camera / Horizontal</small>
+          </div>
+        </div>
+        <div class="gv-testimony-body">
+          <div class="gv-testimony-name">[ Name ]</div>
+          <div class="gv-testimony-role">[ Batch / Village ]</div>
+          <div class="gv-testimony-quote">"[ Short quote. ]"</div>
+        </div>
+      </div>
+
+      <!-- ── PORTRAIT VIDEO (vertical, phone-style 9:16) ── -->
+      <div class="gv-testimony-card reveal">
+        <div class="gv-vid-wrap portrait-vid">
+          
+        </div>
+      </div>
+
+      <!-- ── LANDSCAPE VIDEO (horizontal, camera-style 16:9) ── -->
+      <div class="gv-testimony-card reveal">
+        <div class="gv-vid-wrap landscape-vid">
+        </div>
+      </div>
+
+    </div><!-- /gv-testimony-grid -->
+  </div><!-- /gv-testimony -->
+
+
   <!-- Gallery -->
   <div class="section-sm" style="background:var(--sand);">
     <div class="reveal">
@@ -334,11 +443,12 @@
     <div class="gallery-grid reveal">
       <div class="gallery-item" ><br/><small style="color:var(--muted)"><img src="images/gruhini-gallary-1.jpeg" alt="Photo 1" style="max-width: 100%; height: auto;"></small></div>
       <div class="gallery-item" ><br/><small><img src="images/gruhini-gallery-photo-2.jpeg" alt="Photo 2" style="max-width: 50%; height: auto;"></small></div>
-      <!-- <div class="gallery-item" style="background:linear-gradient(135deg,var(--earth),var(--bark));"><br/><small style="color:var(--sand)">Photo 3</small></div>
-      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sage),var(--earth));"><br/><small style="color:var(--sand)">Photo 4</small></div> -->
+      <!-- <div class="gallery-item" style="background:linear-gradient(135deg,var(--earth),var(--bark));">📸<br/><small style="color:var(--sand)">Photo 3</small></div>
+      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sage),var(--earth));">📸<br/><small style="color:var(--sand)">Photo 4</small></div> -->
     </div>
   </div>
 
+  
 </div><!-- /gv -->
 
 <!-- ════════════════════════════════════
@@ -387,29 +497,9 @@
       <h4>Email</h4>
       <p><a href="mailto:gruhinividyalay@gmail.com">gruhinividyalay@gmail.com</a></p>
     </div>
-    </div>
-
   </div>
-    <!-- <div class="contact-card reveal">
-      <div class="contact-card-icon">✉️</div>
-      <h4>Email</h4>
-      <p><a href="mailto:gruhinividyalay@gmail.com">gruhinividyalay@gmail.com</a></p>
-    </div> -->
-    <!-- <div class="contact-card reveal">
-      <div class="contact-card-icon">🕐</div>
-      <h4>Office Hours</h4>
-      <p>Mon – Sat<br/>9 AM – 5 PM</p>
-    </div> -->
-  </div>
+</div>
 
-  <!-- Map placeholder -->
-  <!-- <div style="background:var(--sand); padding:0 56px 64px;">
-    <div style="height:280px; border-radius:16px; background:linear-gradient(135deg,var(--sage-lt),var(--sand)); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:10px; color:var(--muted); font-style:italic; box-shadow:0 4px 20px var(--shadow);">
-      🗺️
-      <span style="font-size:14px;">[ Embed a Google Maps iframe here ]</span>
-    </div>
-  </div> -->
-</div><!-- /contact -->
 
 <!-- ════════════════════════════════════
      PAGE: DONATIONS
@@ -443,7 +533,7 @@
 </div><!-- /donate -->
 
 <!-- ════════════════════════════════════
-     Kamalini School
+     PAGE: Kamalini School
 ════════════════════════════════════ -->
 <div id="kamalini" class="page">
 
@@ -586,7 +676,7 @@
       <div class="vid-cell big reveal">
         <div class="vid-ph tall">
           <video controls>
-            <source src="videos/kamalini-big-video.mp4" type="video/mp4">
+            <source src="videos/Kamalini-Big-Video-comp.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -637,11 +727,11 @@
     <!-- CSS columns masonry — drop real <img> tags inside .prog-img-ph to replace -->
     <div class="prog-img-masonry">
 
-      <!-- Portrait (vertical camera) -->
+      <!-- Portrait (vertical camera)
       <div class="prog-img-item reveal">
         <div class="prog-img-ph portrait c1"><img src="images/kamalini-portrait-1.jpg" alt="image 2" style="max-width: 100%; height: auto; object-fit: cover;"></div>
         <div class="prog-img-cap">[ Short caption — who or what is in this photo ]</div>
-      </div>
+      </div> -->
 
       <!-- Landscape (horizontal camera) -->
       <div class="prog-img-item reveal">
@@ -653,19 +743,12 @@
       <div class="prog-img-item reveal">
         <div class="prog-img-ph portrait c3">📸<br/><small>Portrait Photo 3</small></div>
         <div class="prog-img-cap">[ Caption ]</div>
-      </div>
-
-      Wide landscape
-      <div class="prog-img-item reveal">
-        <div class="prog-img-ph wide c4">📸<br/><small>Wide Photo 4</small></div>
-        <div class="prog-img-cap">[ Caption ]</div>
       </div> -->
 
-      <!-- Landscape
       <div class="prog-img-item reveal">
-        <div class="prog-img-ph landscape c5"><img src="images/kamalini-img-5.jpg" alt="image 4" style="max-width: 100%; height: auto; object-fit: cover;"></div>
+        <div class="prog-img-ph wide c4"><img src="images/kamalini-img-5.jpg" alt="image 4" style="max-width: 100%; height: auto; object-fit: cover;"></div>
         <div class="prog-img-cap">[ Caption ]</div>
-      </div> -->
+      </div> 
 
       <!-- Landscape -->
       <div class="prog-img-item reveal">
@@ -678,11 +761,11 @@
     </div><!-- /prog-img-masonry -->
   </div><!-- /prog-images-section -->
 
-</div><!-- /future1 -->
 </div>
+</div> <!-- /kamalini -->
 
 <!-- ════════════════════════════════════
-     Gaurav Samarambh
+     PAGE: Gaurav
 ════════════════════════════════════ -->
 <div id="gaurav" class="page">
 
@@ -836,20 +919,25 @@
 
 </div><!-- /future2 -->
 
-<!-- ── FOOTER ── -->
+<!-- ════════════════════════════════════
+     PAGE: Footer
+════════════════════════════════════ -->
+
 <footer>
   <div class="footer-top">
     <div class="footer-brand brand">
       <span class="brand-tagline">NPO · Empowering Women</span>
-      <span class="brand-name" style="color:var(--white);"><span>Bharatiya Stree Jeevan Vikas Parishad</span></span>
-      <p></p>
+      <span class="brand-name" style="color:var(--white);">Stree <span>Vividha</span></span>
     </div>
     <div class="footer-links">
       <h4>Navigate</h4>
       <a href="#" onclick="showPage('home',    document.querySelectorAll('.tab-btn')[0])">Home</a>
       <a href="#" onclick="showPage('gv',      document.querySelectorAll('.tab-btn')[1])">Gruhini Vidyalaya</a>
+      <a href="#" onclick="showPage('kamalini', document.querySelectorAll('.tab-btn')[4])">Kamalini</a>
+      <a href="#" onclick="showPage('gaurav', document.querySelectorAll('.tab-btn')[5])">Gaurav</a>
       <a href="#" onclick="showPage('donate',  document.querySelectorAll('.tab-btn')[3])">Donations</a>
       <a href="#" onclick="showPage('contact', document.querySelectorAll('.tab-btn')[2])">Contact Us</a>
+      
     </div>
     <div class="footer-links">
       <h4>Legal</h4>

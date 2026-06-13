@@ -1,41 +1,31 @@
 /* ── PAGE LABELS for the active-label on the menu button ── */
-  const PAGE_LABELS = {
-    home:    'Home',
-    gv:      'Gruhini Vidyalaya',
-    future1: 'Programs',
-    future2: 'Stories',
-    donate:  'Donations',
-    contact: 'Contact Us'
-  };
-
-  /* ── TOGGLE MENU ── */
+  /* ── MENU ── */
   function toggleMenu() {
-    const btn      = document.getElementById('menu-toggle');
+    document.getElementById('nav-dropdown').classList.contains('open')
+      ? closeMenu() : openMenu();
+  }
+
+  function openMenu() {
     const dropdown = document.getElementById('nav-dropdown');
-    const isOpen   = dropdown.classList.contains('open');
-    dropdown.classList.toggle('open', !isOpen);
-    btn.classList.toggle('open', !isOpen);
-    btn.setAttribute('aria-expanded', String(!isOpen));
+    const overlay  = document.getElementById('nav-overlay');
+    dropdown.classList.add('open');
+    overlay.classList.add('open');
+    document.getElementById('menu-toggle').classList.add('open');
+    document.getElementById('menu-toggle').setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
   }
 
   function closeMenu() {
-    const btn      = document.getElementById('menu-toggle');
     const dropdown = document.getElementById('nav-dropdown');
+    const overlay  = document.getElementById('nav-overlay');
     dropdown.classList.remove('open');
-    btn.classList.remove('open');
-    btn.setAttribute('aria-expanded', 'false');
+    overlay.classList.remove('open');
+    document.getElementById('menu-toggle').classList.remove('open');
+    document.getElementById('menu-toggle').setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
   }
 
-  /* close when clicking outside */
-  document.addEventListener('click', (e) => {
-    const nav = document.getElementById('main-nav');
-    if (!nav.contains(e.target)) closeMenu();
-  });
-
-  /* close on Escape key */
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
-  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
   /* ── SHOW PAGE ── */
   function showPage(id, btn) {
@@ -44,14 +34,9 @@
     document.getElementById(id).classList.add('active');
     if (btn) btn.classList.add('active');
 
-    /* update the label shown on the menu button */
-    const label = document.getElementById('active-label');
-    if (label) label.textContent = PAGE_LABELS[id] || '';
-
     closeMenu();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    /* wait two frames so display:block has taken effect, then reveal */
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         document.getElementById(id)

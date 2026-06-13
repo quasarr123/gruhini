@@ -18,62 +18,56 @@
 <header>
   <div class="header-inner">
     <div class="brand">
-      <span class="brand-tagline">NPO · Empowering Women</span>
-      <span class="brand-name">Bharatiya Stree Jeevan Vikas Parishad</span>
+      <span class="brand-tagline">NGO · Empowering Women</span>
+      <span class="brand-name">Stree <span>Vividha</span></span>
     </div>
- 
     <nav id="main-nav">
-      <!-- dim backdrop -->
-      <div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
- 
-      <!-- hamburger button -->
       <button class="menu-btn" id="menu-toggle" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
         <span class="menu-bar"></span>
         <span class="menu-bar"></span>
         <span class="menu-bar"></span>
       </button>
- 
-      <!-- sidebar panel -->
-      <div class="nav-dropdown" id="nav-dropdown" role="menu">
- 
-        <!-- close × -->
-        <div class="nav-close-btn">
-          <button class="nav-close-x" onclick="closeMenu()" aria-label="Close menu">✕</button>
-        </div>
- 
-        <!-- mini brand -->
-        <div class="nav-brand-mini">
-          <small>NPO · Empowering Women</small>
-          <strong>Bharatiya Stree Jeevan Vikas Parishad</strong>
-        </div>
- 
-        <button class="tab-btn active" onclick="showPage('home', this)" role="menuitem">
-          <span class="tab-icon">🏠</span> Home
-        </button>
-        <button class="tab-btn" onclick="showPage('gv', this)" role="menuitem">
-          <span class="tab-icon">📚</span> Gruhini Vidyalaya
-        </button>
-        <button class="tab-btn" onclick="showPage('kamalini', this)" role="menuitem">
-          <span class="tab-icon">🦻</span> Kamalini Karnabadhir School
-        </button>
-        <button class="tab-btn" onclick="showPage('gaurav', this)" role="menuitem">
-          <span class="tab-icon">🏅</span> Gaurav
-        </button>
- 
-        <div class="nav-divider"></div>
- 
-        <button class="tab-btn" onclick="showPage('donate', this)" role="menuitem">
-          <span class="tab-icon">♥</span> Donations
-        </button>
-        <button class="tab-btn" onclick="showPage('contact', this)" role="menuitem">
-          <span class="tab-icon">📞</span> Contact Us
-        </button>
- 
-        <div class="nav-footer">© Bharatiya Stree Jeevan Vikas Parishad · All rights reserved</div>
-      </div>
     </nav>
   </div>
 </header>
+
+<!-- backdrop and panel live on body, not inside header -->
+<div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
+
+<div class="nav-dropdown" id="nav-dropdown" role="menu">
+  <div class="nav-close-btn">
+    <button class="nav-close-x" onclick="closeMenu()" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-brand-mini">
+    <small>NGO · Empowering Women</small>
+    <strong>Stree <em>Vividha</em></strong>
+  </div>
+
+  <button class="tab-btn active" onclick="showPage('home', this)" role="menuitem">
+    <span class="tab-icon">🏠</span> Home
+  </button>
+  <button class="tab-btn" onclick="showPage('gv', this)" role="menuitem">
+    <span class="tab-icon">📚</span> Gruhini Vidyalaya
+  </button>
+  <button class="tab-btn" onclick="showPage('kamalini', this)" role="menuitem">
+    <span class="tab-icon">🦻</span> Kamalini Karnabadhir School
+  </button>
+  <button class="tab-btn" onclick="showPage('gaurav', this)" role="menuitem">
+    <span class="tab-icon">🏅</span> Gaurav Samarambh
+  </button>
+
+  <div class="nav-divider"></div>
+
+  <button class="tab-btn" onclick="showPage('donate', this)" role="menuitem">
+    <span class="tab-icon">♥</span> Donations
+  </button>
+  <button class="tab-btn" onclick="showPage('contact', this)" role="menuitem">
+    <span class="tab-icon">📞</span> Contact Us
+  </button>
+
+  <div class="nav-footer">© Stree Vividha · All rights reserved</div>
+</div>
+
 
 <!-- ════════════════════════════════════
      PAGE: HOME
@@ -310,8 +304,8 @@
           Please help us by Donations. Kindly visit the Donations tab.
         </strong></p>
     </div>
-    <div class="about-img" style="background:linear-gradient(135deg,var(--sage) 0%, var(--bark) 100%);">
-      <div class="about-img-label"><img src="images/gruhini-ai-photo-2.jpeg" alt="Gruhini Vidyalay pamplet" style="max-width: 100%; height: auto;"><br/><small style="margin-top:6px; display:block; opacity:0.7;">Classroom / Students Photo</small></div>
+    <div class="about-img-gv" >
+      <div class="about-img-label"><img src="images/gruhini-ai-photo-2.jpeg" alt="Gruhini Vidyalay pamplet" style="max-width: 100%; height: auto;"><br/><small style="margin-top:6px; display:block; opacity:0.7;"></small></div>
     </div>
   </div>
 
@@ -387,7 +381,6 @@
           <video controls>
               <source src="videos/gruhini-testimony-1.mp4" type="video/mp4">
             </video>
-          
         </div>
         <div class="gv-testimony-body">
           <div class="gv-testimony-name">[ Name ]</div>
@@ -418,18 +411,18 @@
         </div>
       </div>
 
-      <!-- ── PORTRAIT VIDEO (vertical, phone-style 9:16) ── -->
+      <!-- ── PORTRAIT VIDEO (vertical, phone-style 9:16) ──
       <div class="gv-testimony-card reveal">
         <div class="gv-vid-wrap portrait-vid">
           
         </div>
-      </div>
+      </div> -->
 
-      <!-- ── LANDSCAPE VIDEO (horizontal, camera-style 16:9) ── -->
+      <!-- ── LANDSCAPE VIDEO (horizontal, camera-style 16:9) ──
       <div class="gv-testimony-card reveal">
         <div class="gv-vid-wrap landscape-vid">
         </div>
-      </div>
+      </div> -->
 
     </div><!-- /gv-testimony-grid -->
   </div><!-- /gv-testimony -->

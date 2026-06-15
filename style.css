@@ -324,6 +324,16 @@
     }
     .btn-outline:hover { border-color: var(--warm); color: var(--warm); background: rgba(255,255,255,0.04); }
 
+    .btn-outline-kamalini {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: transparent; color: var(--earth);
+      padding: 14px 32px; border-radius: 50px; font-weight: 700;
+      font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+      cursor: pointer; border: 2px solid rgba(255,255,255,0.25);
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+    }
+    .btn-outline-kamalini:hover { border-color: var(--warm); color: var(--warm); background: rgba(255,255,255,0.04); }
+
     .hero-scroll-hint {
       position: absolute; bottom: 36px; left: 56px;
       display: flex; align-items: center; gap: 10px;
@@ -440,7 +450,7 @@
 
     /* — Gallery strip — */
     .gallery-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 16px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 300px)); gap: 16px;
     }
     .gallery-item {
       height: 180px; border-radius: 14px;

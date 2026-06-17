@@ -1116,6 +1116,13 @@
       align-items: center; justify-content: center;
       color: var(--earth); font-style: italic; font-size: 13px; gap: 6px;
     }
+
+    .mason-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+
     /* vary heights visually */
     .mason-item:nth-child(3n)   .mason-img { min-height: 220px; }
     .mason-item:nth-child(3n+2) .mason-img { min-height: 180px; }

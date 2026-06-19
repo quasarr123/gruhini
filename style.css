@@ -251,7 +251,7 @@
 
     /* — Full-bleed hero with layered depth — */
     .home-hero {
-      position: relative; min-height: 92vh;
+      position: relative; min-height: 2vh; /* min-height = 92 earlier*/
       display: flex; align-items: center;
       overflow: hidden;
       background: linear-gradient(150deg, var(--bark-dk) 0%, var(--bark) 45%, var(--earth) 100%);
@@ -291,7 +291,7 @@
 
     .home-hero-title {
       font-family: 'Playfair Display', serif;
-      font-size: clamp(42px, 6vw, 72px);
+      font-size: clamp(42px, 3vw, 72px);
       color: var(--white); line-height: 1.1; margin-bottom: 24px;
     }
     .home-hero-title em { color: var(--warm); font-style: italic; }
@@ -349,9 +349,9 @@
 
     /* — What We Stand For — */
     .values-strip {
-      background: var(--sand); padding: 64px 56px;
+      background: var(--sand); padding: 30px 20px;
       display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
+      gap: 10px;
     }
     .value-item { text-align: center; }
     .value-icon {
@@ -573,7 +573,7 @@
       line-height: 1.7; font-style: italic;
     }
     .gv-hero {
-      position: relative; min-height: 460px;
+      position: relative; min-height: 10px;
       display: flex; align-items: flex-end; overflow: hidden;
       background: linear-gradient(160deg, var(--bark-dk) 0%, var(--bark) 50%, var(--earth) 100%);
     }

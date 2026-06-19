@@ -80,7 +80,7 @@
     <div class="blob blob-2"></div>
 
     <svg class="hero-rings" viewBox="0 0 580 580" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="290" cy="290" r="100"/>
+    <circle cx="290" cy="290" r="100"/>
       <circle cx="290" cy="290" r="160"/>
       <circle cx="290" cy="290" r="220"/>
       <circle cx="290" cy="290" r="270"/>
@@ -88,16 +88,16 @@
 
     <div class="home-hero-content">
       <div class="hero-eyebrow">NPO · India · Since 1953</div>
-      <h1 class="home-hero-title">
-        Many Colours,<br/><em>One Purpose.</em>
-      </h1>
+      <h3 class="home-hero-title">
+        Many Colours, <em>One Purpose.</em>
+      </h3>
       <p class="home-hero-sub">
         <!-- ✏️ Replace with your actual mission statement -->
         || जागृत मातृ-पितृ गुरुजन शक्ती तव नाम राष्ट्रोन्नती ||
       </p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="showPage('donate', document.querySelectorAll('.tab-btn')[3])">♥ Support Us</button>
-        <button class="btn-outline"  onclick="showPage('gv',     document.querySelectorAll('.tab-btn')[1])">Our Work →</button>
+        <button class="btn-outline"  onclick="document.getElementById('Programs').scrollIntoView({behavior: 'smooth'});">Our Work →</button>
       </div>
     </div>
 
@@ -143,7 +143,7 @@
       <div class="divider"></div>
       <h2 class="section-title">Who We Are</h2>
       <blockquote>"|| जागृत मातृ-पितृ गुरुजन शक्ती तव नाम राष्ट्रोन्नती ||"</blockquote>
-      <p>
+      <p style="font-size: 17px;">
         Established in 1953 Bharatiya Stree Jeevan Vikas Parishad is a non-profit social organization committed to the holistic development of women and society. The organization works in the fields of education, healthcare support, vocational training, women’s welfare, and community development. 
         Over the years, the Parishad has developed various initiatives aimed at strengthening communities and creating sustainable opportunities for women and children.
       </p>
@@ -154,7 +154,7 @@
   <!-- Stats -->
   <div class="stats-strip">
     <div class="stat-item reveal">
-      <div class="stat-number">500+</div>
+      <div class="stat-number">220+</div>
       <div class="stat-label">Women Reached</div>
     </div>
     <div class="stat-item reveal">
@@ -162,17 +162,17 @@
       <div class="stat-label">Villages</div>
     </div>
     <div class="stat-item reveal">
-      <div class="stat-number">8</div>
+      <div class="stat-number">73</div>
       <div class="stat-label">Years of Impact</div>
     </div>
     <div class="stat-item reveal">
       <div class="stat-number">₹0</div>
-      <div class="stat-label">Cost to Students</div>
+      <div class="stat-label">Cost to Women</div>
     </div>
   </div>
 
   <!-- Programs preview -->
-  <div class="section">
+  <div class="section" id="Programs">
     <div class="reveal">
       <div class="divider"></div>
       <h2 class="section-title">Our Programs</h2>

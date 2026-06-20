@@ -683,7 +683,7 @@
     @keyframes bounce   { 0%,100% { transform:translateY(0); } 50% { transform:translateY(6px); } }
 
     /* ══════════════════════════════════
-       TAB 1 – PROGRAMS  (redesigned)
+       KAMALINI
     ══════════════════════════════════ */
 
     /* ── program page hero banner ── */
@@ -692,6 +692,16 @@
       background: linear-gradient(150deg, var(--bark-dk) 0%, var(--earth) 58%, var(--sage) 100%);
       overflow: hidden;
       min-height: 380px;
+    }
+
+    .blink {
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 40%;
+      }
     }
 
     /* old top strip — hidden, replaced by absolute-positioned logos */

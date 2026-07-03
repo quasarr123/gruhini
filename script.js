@@ -48,21 +48,24 @@
 
   /* ── SCROLL REVEAL (active page only) ── */
   function triggerReveal() {
-    const activePage = document.querySelector('.page.active');
-    if (!activePage) return;
-    activePage.querySelectorAll('.reveal, .card').forEach((el, i) => {
-      if (el.getBoundingClientRect().top < window.innerHeight - 40)
+    const container = document.querySelector('.page.active') || document;
+
+    container.querySelectorAll('.reveal, .card').forEach((el, i) => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 40) {
+            setTimeout(() => el.classList.add('visible'), i * 60);
+        }
+    });
+}
+
+window.addEventListener('scroll', triggerReveal);
+
+window.addEventListener('load', () => {
+    const container = document.querySelector('.page.active') || document;
+
+    container.querySelectorAll('.reveal, .card').forEach((el, i) => {
         setTimeout(() => el.classList.add('visible'), i * 60);
     });
-  }
-
-  window.addEventListener('scroll', triggerReveal);
-  window.addEventListener('load', () => {
-    const activePage = document.querySelector('.page.active');
-    if (activePage)
-      activePage.querySelectorAll('.reveal, .card')
-        .forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 60));
-  });
+});
 
   /* ── COUNTER ANIMATION ── */
   function animateCounters() {

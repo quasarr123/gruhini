@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Bharatiya Stree Jeevan Vikas Parishad is NPO pioneering in Women's Development and Empowerment. It has many sub-organisations like Gruhini Vidyalay/ Grihini Vidyalay, Kamalini Karnabadhir School etc."> 
+  <meta name="keywords" content="HTML, CSS, JavaScript, NGO, NPO, Women welfare, Women development, Tribal Girls, Thane, Mahim">
+  
+  <title>Gaurav Samarambh</title>
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <!-- ── HEADER ── -->
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-tagline">NPO · Empowering Women</span>
+      <span class="brand-name">Bharatiya Stree Jeevan Vikas Parishad</span>
+    </div>
+    <nav id="main-nav">
+      <button class="menu-btn" id="menu-toggle" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+
+<!-- backdrop and panel live on body, not inside header -->
+<div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
+
+<div class="nav-dropdown" id="nav-dropdown" role="menu">
+  <div class="nav-close-btn">
+    <button class="nav-close-x" onclick="closeMenu()" aria-label="Close menu">✕</button>
+  </div>
+  <div class="nav-brand-mini">
+    <small>NPO · Empowering Women</small>
+    <strong>Bharatiya Stree Jeevan Vikas Parishad</strong>
+  </div>
+
+  <a href="../index.html" class="tab-btn active">
+    <span class="tab-icon">🏠</span> Home
+  </a>
+  <a href="../gruhini vidyalaya/" class="tab-btn">
+    <span class="tab-icon">📚</span> Gruhini Vidyalaya
+  </a>
+
+  <a href="../kamalini school/" class="tab-btn">
+    <span class="tab-icon">🦻</span> Kamalini Karnabadhir School
+  </a>
+  <a href="../gaurav samarambh/" class="tab-btn">
+    <span class="tab-icon">🏅</span> Gaurav Samarambh
+  </a>
+
+  <div class="nav-divider"></div>
+
+  <a href="../donations/" class="tab-btn">
+    <span class="tab-icon">♥</span> Donations
+  </a>
+
+  <a href="../contact/index.html" class="tab-btn">
+    <span class="tab-icon">📞</span> Contact Us
+  </a>
+
+  <div class="nav-footer">© Bharatiya Stree Jeevan Vikas Parishad · All rights reserved</div>
+</div>
+
+<div id="gaurav">
+
+  <!-- Hero -->
+  <div class="stories-hero">
+    <div class="divider" style="background:var(--warm);"></div>
+    <h2>Gaurav <em>Samarambh</em></h2>
+    <p>Gaurav Samarambh (Honor Ceremony) has been held annually since 2002</p>
+  </div>
+
+  <!-- Main intro text -->
+  <div class="stories-intro reveal">
+    <div class="divider"></div>
+    <h2 class="section-title">About us</h2>
+    <p></p>
+    <p>Here are some of the examples of awards: </p>
+
+      <p>Founder's Memorial Award: Dedicated to the senior propagator of social work in memory of Vandaniya Lakshmibai Kelkar, the founder of the Rashtra Sevika Samiti </p>
+      <p>Social Service Honors: Awards presented to distinguished senior social workers in memory of Vandaniya Saraswatibai Apte, the second director of the Samiti. </p>
+      <p>Service Contribution: A goodwill fund dedicated to service-oriented organizations in memory of Bakultai Deokule, the founder of the Bharatiya Stree Jeevan Vikas Parishad.</p>
+  </div>
+
+  <!-- Masonry photo gallery -->
+  <div class="masonry">
+
+    <div class="mason-item reveal">
+      <div class="mason-img"><br/><small><img src="../images/gaurav-2024.jpeg" alt="2024" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
+      <div class="mason-caption">2024</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img"><br/><small><img src="../images/gaurav-2022.jpeg" alt="2022" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
+      <div class="mason-caption">2022</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img"><br/><small><img src="../images/gaurav-2019.jpeg" alt="2019" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
+      <div class="mason-caption">2019</div>
+    </div>
+
+    <!-- <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 4</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 5</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 6</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 7</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 8</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 9</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 10</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 11</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div>
+
+    <div class="mason-item reveal">
+      <div class="mason-img">📸<br/><small>Photo 12</small></div>
+      <div class="mason-caption">[ Short description. ]</div>
+    </div> -->
+
+  </div><!-- /masonry -->
+
+  <!-- Testimony Videos -->
+  <!-- <div class="testimony-section">
+    <div class="divider"></div>
+    <h3>Voices from the Community</h3>
+    <p class="section-sub">Real testimonials from the women and volunteers at the heart of our work.</p>
+
+    <div class="testimony-grid">
+
+      <div class="testimony-card reveal">
+        <div class="testimony-vid">
+          ✏️ EMBED: Replace with <iframe src="..."> for a real YouTube/Vimeo testimonial
+          <div class="testimony-vid-overlay">
+            <div class="play-btn">▶</div>
+            <span style="font-size:12px; color:var(--sand);">Video Testimonial</span>
+          </div>
+        </div>
+        <div class="testimony-body">
+          <div class="testimony-name">[ Name ]</div>
+          <div class="testimony-role">[ Village / Program Batch ]</div>
+          <div class="testimony-quote">"[ Short pull-quote from this person's testimony — one or two sentences. ]"</div>
+        </div>
+      </div>
+
+      <div class="testimony-card reveal">
+        <div class="testimony-vid">
+          <div class="testimony-vid-overlay">
+            <div class="play-btn">▶</div>
+            <span style="font-size:12px; color:var(--sand);">Video Testimonial</span>
+          </div>
+        </div>
+        <div class="testimony-body">
+          <div class="testimony-name">[ Name ]</div>
+          <div class="testimony-role">[ Village / Program Batch ]</div>
+          <div class="testimony-quote">"[ Short pull-quote. ]"</div>
+        </div>
+      </div>
+
+      <div class="testimony-card reveal">
+        <div class="testimony-vid">
+          <div class="testimony-vid-overlay">
+            <div class="play-btn">▶</div>
+            <span style="font-size:12px; color:var(--sand);">Video Testimonial</span>
+          </div>
+        </div>
+        <div class="testimony-body">
+          <div class="testimony-name">[ Name ]</div>
+          <div class="testimony-role">[ Village / Program Batch ]</div>
+          <div class="testimony-quote">"[ Short pull-quote. ]"</div>
+        </div>
+      </div>
+
+      <div class="testimony-card reveal">
+        <div class="testimony-vid">
+          <div class="testimony-vid-overlay">
+            <div class="play-btn">▶</div>
+            <span style="font-size:12px; color:var(--sand);">Video Testimonial</span>
+          </div>
+        </div>
+        <div class="testimony-body">
+          <div class="testimony-name">[ Name ]</div>
+          <div class="testimony-role">[ Village / Program Batch ]</div>
+          <div class="testimony-quote">"[ Short pull-quote. ]"</div>
+        </div>
+      </div>
+
+    </div>/testimony-grid -->
+  </div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand brand">
+      <span class="brand-tagline">NPO · Empowering Women</span>
+      <span class="brand-name" style="color:var(--white);">Bharatiya Stree Jeevan Vikas Parishad</span>
+    </div>
+    <div class="footer-links">
+      <h4>Navigate</h4>
+      <nav>
+      <a href="../index.html">Home</a>
+      <a href="../gruhini vidyalaya/">Gruhini Vidyalaya</a>
+      <a href="../kamalini school/">Kamalini Karnabadhir School</a>
+      <a href="../gaurav samarambh/">Gaurav Samarambh</a>
+      <a href="../donations/" class="blink">Donations</a>
+      <a href="../contact/">Contact Us</a>
+      </nav>
+    </div>
+    <!-- <div class="footer-links">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">80G Certificate</a>
+      <a href="#">Annual Report</a>
+    </div> -->
+    <!-- <div class="footer-links">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter / X</a>
+      <a href="#">LinkedIn</a>
+    </div> -->
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Bharatiya Stree Jeevan Vikas Parishad. All rights reserved.
+      <br>
+      Developed by Tejas Aphale.
+    </span>
+    <span>Registered NPO · Darpan id - MH/2025/0579052</span>
+  </div>
+</footer>
+
+<script src="../script.js">
+</script>
+</body>
+</html>

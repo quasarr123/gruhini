@@ -39,6 +39,11 @@ npo-website/
 │
 ├── images
 ├── videos
+├── contact
+├── donations
+├── gaurav-samarambh
+├── gruhini-vidyalaya
+├── kamalini-school
 ├── index.html
 ├── script.js
 ├── style.css

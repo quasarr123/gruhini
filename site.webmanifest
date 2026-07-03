@@ -1,0 +1,27 @@
+{
+  "name": "Gruhini Vidyalaya",
+  "short_name": "Gruhini",
+  "description": "Official website of Gruhini Vidyalaya, dedicated to women's education, empowerment, and community development.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fdf6ee",
+  "theme_color": "#6e4a2e",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "nonprofit",
+    "charity"
+  ],
+  "icons": [
+    {
+      "src": "../images/favicon-copy.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    }
+    
+  ]
+}

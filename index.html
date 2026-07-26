@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=../home/">
+    <link rel="canonical" href="https://streejeevanparishad.org.in/home/">
+
+    <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="description" content="Bharatiya Stree Jeevan Vikas Parishad is NPO pioneering in Women's Development and Empowerment. It has many sub-organisations like Gruhini Vidyalay/ Grihini Vidyalay, Kamalini Karnabadhir School etc."> 
@@ -19,7 +23,7 @@
   content="https://streejeevanparishad.org.in/images/stree-main-photo.jpeg">
 
   <meta property="og:url"
-  content="https://streejeevanparishad.org.in/">
+  content="https://streejeevanparishad.org.in/home/">
 
   <meta property="og:type"
   content="website">
@@ -29,7 +33,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../style.css">
 
-  <link rel="canonical" href="https://streejeevanparishad.org.in/">
   <link rel="manifest" href="../site.webmanifest">
   <meta name="theme-color" content="#6e4a2e">
 
@@ -42,303 +45,6 @@
     "logo":"https://streejeevanparishad.org.in/images/favicon-copy.png"
   }
   </script>
-</head>
-<body>
-
-<!-- ── HEADER ── -->
-<header>
-  <div class="header-inner">
-    <div class="brand">
-      <span class="brand-tagline">NPO · Empowering Women</span>
-      <span class="brand-name">Bharatiya Stree Jeevan Vikas Parishad</span>
-    </div>
-    <nav id="main-nav">
-      <button class="menu-btn" id="menu-toggle" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-      </button>
-    </nav>
-  </div>
-</header>
-
-<!-- backdrop and panel live on body, not inside header -->
-<div class="nav-overlay" id="nav-overlay" onclick="closeMenu()"></div>
-
-<div class="nav-dropdown" id="nav-dropdown" role="menu">
-  <div class="nav-close-btn">
-    <button class="nav-close-x" onclick="closeMenu()" aria-label="Close menu">✕</button>
-  </div>
-  <div class="nav-brand-mini">
-    <small>NPO · Empowering Women</small>
-    <strong>Bharatiya Stree Jeevan Vikas Parishad</strong>
-  </div>
-
-  <a href="../index.html" class="tab-btn active">
-    <span class="tab-icon">🏠</span> Home
-  </a>
-  <a href="gruhini-vidyalaya/" class="tab-btn">
-    <span class="tab-icon">📚</span> Gruhini Vidyalaya
-  </a>
-
-  <a href="kamalini-school/" class="tab-btn">
-    <span class="tab-icon">🦻</span> Kamalini Karnabadhir School
-  </a>
-  <a href="gaurav-samarambh/" class="tab-btn">
-    <span class="tab-icon">🏅</span> Gaurav Samarambh
-  </a>
-
-  <div class="nav-divider"></div>
-
-  <a href="donations/" class="tab-btn">
-    <span class="tab-icon">♥</span> Donations
-  </a>
-
-  <a href="contact/index.html" class="tab-btn">
-    <span class="tab-icon">📞</span> Contact Us
-  </a>
-
-  <div class="nav-footer">© Bharatiya Stree Jeevan Vikas Parishad · All rights reserved</div>
-</div>
-
-
-<!-- ════════════════════════════════════
-     PAGE: HOME
-════════════════════════════════════ -->
-<div id="home" class="page active">
-
-  <!-- Full-bleed hero -->
-  <div class="home-hero">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
-    <svg class="hero-rings" viewBox="0 0 580 580" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="290" cy="290" r="100"/>
-      <circle cx="290" cy="290" r="160"/>
-      <circle cx="290" cy="290" r="220"/>
-      <circle cx="290" cy="290" r="270"/>
-    </svg>
-
-    <div class="home-hero-content">
-      <div class="hero-eyebrow">NPO · India · Since 1953</div>
-      <h3 class="home-hero-title">
-        Many Colours, <em>One Purpose.</em>
-      </h3>
-      <p class="home-hero-sub">
-        <!-- ✏️ Replace with your actual mission statement -->
-        || जागृत मातृ-पितृ गुरुजन शक्ती तव नाम राष्ट्रोन्नती ||
-      </p>
-      <div class="hero-actions">
-        <button class="btn-primary" onclick="showPage('donate', document.querySelectorAll('.tab-btn')[3])">♥ Support Us</button>
-        <button class="btn-outline"  onclick="document.getElementById('Programs').scrollIntoView({behavior: 'smooth'});">Our Work →</button>
-      </div>
-    </div>
-
-    <div class="hero-scroll-hint">↓ &nbsp; Scroll to explore</div>
-
-    <svg class="hero-curve" viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 C360,0 1080,0 1440,80 L1440,80 L0,80 Z" fill="#fdf6ee"/>
-    </svg>
-  </div>
-
-  <!-- Values strip -->
-  <div class="values-strip">
-    <div class="value-item reveal">
-      <div class="value-icon">📚</div>
-      <div class="value-title">Education</div>
-      <p class="value-text"></p>
-    </div>
-    <div class="value-item reveal">
-      <div class="value-icon">🌱</div>
-      <div class="value-title">Livelihood</div>
-      <p class="value-text"></p>
-    </div>
-    <div class="value-item reveal">
-      <div class="value-icon">🤝</div>
-      <div class="value-title">Community</div>
-      <p class="value-text"></p>
-    </div>
-    <div class="value-item reveal">
-      <div class="value-icon">💛</div>
-      <div class="value-title">Dignity</div>
-      <p class="value-text"></p>
-    </div>
-  </div>
-
-  <!-- About split -->
-  <div class="about-split">
-    <div class="about-img">
-      <div class="about-img-label">
-        <img src="images/stree-main-photo.jpeg" alt="Main Photo" style="max-width: 100%; height: auto;" oncontextmenu="return false;" ondragstart="return false;"><br/>
-      </div>
-    </div>
-    <div class="about-text">
-      <div class="divider"></div>
-      <h2 class="section-title">Who We Are</h2>
-      <blockquote>"|| जागृत मातृ-पितृ गुरुजन शक्ती तव नाम राष्ट्रोन्नती ||"</blockquote>
-      <p>
-        Established in 1953 Bharatiya Stree Jeevan Vikas Parishad is a non-profit social organization committed to the holistic development of women and society. The organization works in the fields of education, healthcare support, vocational training, women’s welfare, and community development. 
-        Over the years, the Parishad has developed various initiatives aimed at strengthening communities and creating sustainable opportunities for women and children.
-      </p>
-      <p>
-        The objectives of Bhartiya Stree Jeevan Vikas Parishad are to educate Bhartiya women and facilitated them to be self-supporting.
-        To fulfil these objectives parishad established “Gruhini Vidyalay” at Mahim. 
-        Since 1965, for almost 20-25 yrs, the parishad has been running Govt. recognised certificate & diploma course in home science at Mahim. 
-        Along with this the parishad is also running short courses such as: Tailoring & Embroidery, Bakery and Cooking, Photography, Batick, Yogasanas, Typing, Interior Decoration and Draftsman etc. 
-        The Gruhini Vidyalay was given an opportunity by the Government of Maharashtra to participate in Applied Nutrition program, the UNISEF scheme, for 4 years since 1965. 
-        The parishad used to supply food to students from 4 schools run by social welfare board and many other schools. Currently the parishad is running a working women hostel and “kamalini karnabadhir Vidyalaya” at Thane.
-      </p>
-      <p>
-        Government of maharashtra has given opportunity to the Parishad to impart value education in rural ashramshalas. Hence project for tribal students is being held for personality development of the tribal students. Our volunteers in the organization involved in this project go to verious Ashram schools in all over Maharashtra and teach them Yoga, games, physical activities, shloka, stories etc.
-        <br>•	Apart from conducting Yoga and fitness centre, this organization also conduct Sanskar Varga for children.
-        <br>•	This organisation has also been working towards countering malnutrition in the tribal areas by arranging medical camps in the tribal areas.
-      </p>
-    </div>
-  </div>
-
-  <!-- Stats -->
-  <div class="stats-strip">
-    <div class="stat-item reveal">
-      <div class="stat-number">1000</div>
-      <div class="stat-label">Women Reached</div>
-    </div>
-    <div class="stat-item reveal">
-      <div class="stat-number">12</div>
-      <div class="stat-label">Villages</div>
-    </div>
-    <div class="stat-item reveal">
-      <div class="stat-number">73</div>
-      <div class="stat-label">Years of Impact</div>
-    </div>
-    <div class="stat-item reveal">
-      <div class="stat-number">₹0</div>
-      <div class="stat-label">Cost to Women</div>
-    </div>
-  </div>
-
-  <!-- Programs preview -->
-  <div class="section" id="Programs">
-    <div class="reveal">
-      <div class="divider"></div>
-      <h2 class="section-title">Our Programs</h2>
-      <p class="section-sub">A snapshot of the initiatives running under Bharatiya Stree Jeevan Vikas Parishad.</p>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-img"><img src="images/kamalini-photo.jpeg" alt="Kamalini Students Photo" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label">Education</div>
-          <div class="card-title">Kamalini School for Hearing-Impaired Children</div>
-          <p class="card-text">Nurturing Every Child's Potential Established in 1990, Kamalini Karnabadhir Vidyalaya is committed to providing quality education and holistic development opportunities for children with hearing impairments.<br>
-                              •	Education from Pre-Primary to Grade 7.<br>
-                              •	Hindi-medium instruction.<br>
-                              •	Well-equipped classrooms.<br>
-                              •	Qualified and specially trained teachers.<br><br>
-
-                              Specialized Support<br>
-                              •	Group hearing aid systems.<br>
-                              •	Speech and hearing development programs.<br>
-                              •	Early intervention services for children aged 0–5 years.<br>
-                              •	Speech therapy and parental guidance.<br><br>
-
-                              Beyond Academics<br>
-                              •	Students are encouraged to participate in:<br>
-                              •	Dance and Drama, Drawing and Painting<br>
-                              •	Technology-Enabled Learning<br>
-                              •	E-Learning Facilities</p> <br/>
-
-                              <button class="btn-outline-kamalini"  onclick="showPage('kamalini', document.querySelectorAll('.tab-btn')[4])"><u><i>More</i></u></button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img"><img src="images/womens-hostel.jpeg" alt="Women's Hostel" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><br>Livelihood</div>
-          <div class="card-title">Women's Hostel</div>
-          <p class="card-text">Safe, Comfortable & Affordable Accommodation. Established in 1988, the Women's Hostel provides secure and convenient accommodation for women and girls who come to Thane for education or employment. Just 5 minutes walking distance from Thane Railway Station.<br>
-            •	Safe and hygienic residential environment.<br>
-            •	Comfortable furnished rooms.<br>
-            •	Nutritious and wholesome meals.<br>
-            •	Affordable fee structure.<br>
-            •	Modern amenities and essential facilities.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img"><img src="images/ram-mandir.jpeg" alt="Ram Mandir" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></div>
-        <div class="card-body">
-          <div class="card-label"><br>Mandir trust</div>
-          <div class="card-title">Shri Ram Mandir</div>
-          <p class="card-text">The only Shri Ram Mandir in Thane East
-              A Spiritual Centre for the Community. Shri Ram Mandir is a revered spiritual landmark serving devotees and the local community. Where programs are held like Bhajan and Kirtan,
-              Daily worship and religious activities, and Annual Ram Janmotsav celebrations.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Gallery -->
-  <div class="section-sm" style="background:var(--sand);">
-    <div class="reveal">
-      <div class="divider"></div>
-      <h2 class="section-title">Gallery</h2>
-      <p class="section-sub">Moments from the field — classrooms, ceremonies, and community.</p>
-    </div>
-    <div class="gallery-grid reveal">
-      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sage-lt),var(--sand));"><br/><small style="color:var(--muted)"><img src="images/stree-gallery-photo-1.jpeg" alt="Photo 1" style="max-width: 100%; height: auto;" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
-      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sand),var(--warm));"><br/><small><img src="images/stree-gallery-photo-2.jpeg" alt="Photo 2" style="max-width: 100%; height: auto;" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
-      <div class="gallery-item" style="background:linear-gradient(135deg,var(--earth),var(--bark));"><br/><small style="color:var(--sand)"><img src="images/stree-gallery-photo-3.jpeg" alt="Photo 3" style="max-width: 100%; height: auto;" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
-      <div class="gallery-item" style="background:linear-gradient(135deg,var(--sage),var(--earth));"><br/><small style="color:var(--sand)"><img src="images/stree-gallery-photo-4.jpeg" alt="Photo 4" style="max-width: 100%; height: auto;" oncontextmenu="return false;" ondragstart="return false;" loading="lazy"></small></div>
-    </div>
-  </div>
-
-</div><!-- /home -->
-
-
-<!-- ════════════════════════════════════
-     PAGE: Footer
-════════════════════════════════════ -->
-
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand brand">
-      <span class="brand-tagline">NPO · Empowering Women</span>
-      <span class="brand-name" style="color:var(--white);">Bharatiya Stree Jeevan Vikas Parishad</span>
-    </div>
-    <div class="footer-links">
-      <h4>Navigate</h4>
-      <nav>
-      <a href="../index.html">Home</a>
-      <a href="../gruhini-vidyalaya/">Gruhini Vidyalaya</a>
-      <a href="../kamalini-school/">Kamalini Karnabadhir School</a>
-      <a href="../gaurav-samarambh/">Gaurav Samarambh</a>
-      <a href="../donations/" class="blink">Donations</a>
-      <a href="../contact/">Contact Us</a>
-      </nav>
-    </div>
-    <!-- <div class="footer-links">
-      <h4>Legal</h4>
-      <a href="#">Privacy Policy</a>
-      <a href="#">80G Certificate</a>
-      <a href="#">Annual Report</a>
-    </div> -->
-    <!-- <div class="footer-links">
-      <h4>Follow Us</h4>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitter / X</a>
-      <a href="#">LinkedIn</a>
-    </div> -->
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 Bharatiya Stree Jeevan Vikas Parishad. All rights reserved.
-      <br>
-      Developed by Tejas Aphale.
-    </span>
-    <span>Registered NPO · Darpan id - MH/2025/0579052</span>
-  </div>
-</footer>
-
-<script src="../script.js">
-</script>
-</body>
+  </head>
+  <body></body>
 </html>

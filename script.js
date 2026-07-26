@@ -84,6 +84,28 @@ window.addEventListener('load', () => {
     });
   }
 
+  /* tab active */
+  (function () {
+  const path = window.location.pathname;
+  
+  document.querySelectorAll('.tab-btn').forEach(link => {
+    const href = link.getAttribute('href');
+    if (!href) return;
+    
+    // Resolve the href to an absolute path for comparison
+    const absHref = new URL(href, window.location.href).pathname;
+    
+    // Match if paths are equal, or if both point to index/root
+    if (
+      path === absHref ||
+      (path.endsWith('/') && absHref === path + 'index.html') ||
+      (absHref.endsWith('/') && path === absHref + 'index.html')
+    ) {
+      link.classList.add('active');
+    }
+  });
+})();
+
   new IntersectionObserver((entries, obs) => {
     entries.forEach(e => { if (e.isIntersecting) { animateCounters(); obs.disconnect(); } });
   }, { threshold: 0.3 }).observe(document.querySelector('.stats-strip') || document.body);

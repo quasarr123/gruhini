@@ -43,7 +43,8 @@
     .header-inner {
       display: flex; align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap; gap: 12px; padding: 14px 0;
+      flex-wrap: nowrap;
+      gap: 12px; padding: 14px 0;
     }
 
     .brand {
@@ -59,6 +60,11 @@
       font-size: 26px; color: var(--white); line-height: 1.1; font-weight: 700;
     }
     .brand-name span { color: var(--warm); }
+
+    @media (max-width: 480px) {
+      .brand-name { font-size: 20px; }
+      .brand-tagline { font-size: 9px; letter-spacing: 2px; }
+    }
 
     /* ══════════════════════════════════
        NAV — BASE
@@ -201,6 +207,20 @@
       border-radius: 0 3px 3px 0;
       transition: height 0.25s cubic-bezier(0.22,1,0.36,1);
     }
+
+    .tab-btn.active {
+      background: rgba(212, 169, 106, 0.15);
+      color: var(--warm);
+      padding-left: 26px;
+    }
+    .tab-btn.active::before {
+      height: 70%;
+    }
+    .tab-btn.active .tab-icon {
+      background: rgba(212, 169, 106, 0.25);
+    }
+
+
     .tab-btn:hover        { background: rgba(255,255,255,0.06); color: var(--white); padding-left: 26px; }
     .tab-btn:hover::before   { height: 60%; }
     .tab-btn.active       { background: rgba(212,169,106,0.15); color: var(--warm); padding-left: 26px; }
